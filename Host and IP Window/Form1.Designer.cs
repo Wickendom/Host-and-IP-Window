@@ -28,62 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.hostNameValue = new System.Windows.Forms.Label();
-            this.IPValue = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            hostNameValue = new Label();
+            IPValue = new Label();
+            button1 = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Host Name:";
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Host Name:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "IP Address:";
+            label2.AutoSize = true;
+            label2.Location = new Point(12, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 15);
+            label2.TabIndex = 1;
+            label2.Text = "IP Address:";
             // 
             // hostNameValue
             // 
-            this.hostNameValue.AutoSize = true;
-            this.hostNameValue.Location = new System.Drawing.Point(88, 9);
-            this.hostNameValue.Name = "hostNameValue";
-            this.hostNameValue.Size = new System.Drawing.Size(38, 15);
-            this.hostNameValue.TabIndex = 2;
-            this.hostNameValue.Text = "label3";
+            hostNameValue.AutoSize = true;
+            hostNameValue.Location = new Point(88, 9);
+            hostNameValue.Name = "hostNameValue";
+            hostNameValue.Size = new Size(38, 15);
+            hostNameValue.TabIndex = 2;
+            hostNameValue.Text = "label3";
             // 
             // IPValue
             // 
-            this.IPValue.AutoSize = true;
-            this.IPValue.Location = new System.Drawing.Point(88, 24);
-            this.IPValue.Name = "IPValue";
-            this.IPValue.Size = new System.Drawing.Size(38, 15);
-            this.IPValue.TabIndex = 3;
-            this.IPValue.Text = "label4";
+            IPValue.AutoSize = true;
+            IPValue.Location = new Point(88, 24);
+            IPValue.Name = "IPValue";
+            IPValue.Size = new Size(38, 15);
+            IPValue.TabIndex = 3;
+            IPValue.Text = "label4";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(61, 42);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "Refresh";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(196, 54);
-            this.Controls.Add(this.IPValue);
-            this.Controls.Add(this.hostNameValue);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            ClientSize = new Size(196, 71);
+            Controls.Add(button1);
+            Controls.Add(IPValue);
+            Controls.Add(hostNameValue);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            MaximizeBox = false;
+            Name = "Form1";
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.Manual;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -92,5 +103,6 @@
         private Label label2;
         private Label hostNameValue;
         private Label IPValue;
+        private Button button1;
     }
 }
